@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE; /* Light mode background color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #76ABAE;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+header {
+    background-color: #31363F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.dark-mode-btn {
+    background-color: #fcfcfc;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dark-mode-btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #DDE6ED;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.todo-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+#new-task {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#add-task-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+
+#add-task-btn:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#add-task-btn:active {
+    background-color: #2e6e30;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #040D12;
+}
+
+.container.dark-mode {
+    background-color: #5C8374;
+    border-color: #555;
+}
+
+header.dark-mode {
+    background-color: #183D3D;
+}
+
+.dark-mode-btn.dark-mode {
+    background-color: #222831;
+    color: white;
+}
+.dark-mode-btn.dark-mode:hover {
+    background-color: #8d929c;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-list.dark-mode {
+    color: #fff;
+}
+
+.todo-list.dark-mode li {
+    border-bottom-color: #555;
+}
+
+.todo-list.dark-mode li.completed {
+    color: #ccc;
+}
+#delete-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+#download-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 260px;
+    border-radius: 10px;
+}
+
+
+#download-btn:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#download-btn:active {
+    background-color: #2e6e30;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#due-date {
+    width: 20%; /* Full width of the container */
+    padding: 10px; /* Space inside the input */
+    font-size: 16px; /* Font size for better readability */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #C1D8C3; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    margin-top: 4px;
+}
+
+/* Styles when the date input is focused */
+#due-date:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2); /* Highlight shadow on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Placeholder styling */
+#due-date::placeholder {
+    color: #aaa; /* Light gray color for placeholder text */
+    opacity: 1; /* Ensures placeholder text is fully visible */
+}
