@@ -25,6 +25,9 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
@@ -52,6 +55,7 @@ header h1 {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .todo-list li {
@@ -62,6 +66,7 @@ header h1 {
     background-color: #DDE6ED;
     overflow: hidden;
     word-wrap: break-word;
+    position: relative;
 }
 
 .todo-list li:last-child {
@@ -149,7 +154,8 @@ header.dark-mode {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 30px;
+
+
 }
 
 #download-btn {
@@ -160,7 +166,7 @@ header.dark-mode {
     font-size: 16px;
     cursor: pointer;
     margin-top: 5px;
-    margin-left: 260px;
+    /* margin-left: 260px; */
     border-radius: 10px;
 }
 
