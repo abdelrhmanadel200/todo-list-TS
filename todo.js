@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.style.padding = '10px 20px';
         button.style.fontSize = '16px';
         button.style.cursor = 'pointer';
-        button.style.marginLeft = '80%';
+        button.style.marginLeft = '35vw';
         button.style.borderRadius = '10px';
         button.style.maxWidth = '600px';
         button.addEventListener('mouseover', function () {
